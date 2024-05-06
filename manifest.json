@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Lesson Timestamp Summarizer",
+  "version": "1.0",
+  "description": "Calculate and display the sum of timestamps for each lesson group on Frontend Masters.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
